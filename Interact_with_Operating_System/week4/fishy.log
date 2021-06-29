@@ -1,0 +1,3 @@
+July 31 00:06:21 mycomputername kernel[96041]: WARN Failes to start network connection
+July 31 00:09:53 mycomputername updater[46711]: WARN Computer needs to be turned off and on again
+July 31 04:11:32 mycomputername CRON[51253]: ERROR: Failed to start CRON job due to script syntax error, Inform the CRON job owner!
