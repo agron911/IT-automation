@@ -16,5 +16,5 @@ and generate reports based on the information extracted from the log files.
 
 ### Result
 
-<img src="./Error_html.jpg" width="350px" />
-<img src="./User_statistics_html.jpg" width="350px" />
+<img src="./Error_html.jpg" width="600px" />
+<img src="./User_statistics_html.jpg" width="600px" />
