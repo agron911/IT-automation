@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 import sys
 import csv
-import ols
+import os
 
 def process_csv(csv_file):
-    print("Processing" {}.format(csv_file))
+    print("Processing {}".format(csv_file))
     with open(csv_file,'r') as datafile:
         data = list(csv.reader(datafile))
     return data
@@ -13,6 +13,7 @@ def data_to_html(title,data):
     html_content="""
 <html>
 <head>
+<style>
 table{
     width: 25%;
     font-family: arial,sans-serif;
@@ -65,11 +66,11 @@ def main():
         sys.exit(1)
     
     if ".html" not in html_file:
-        print("Missing '.html' file extension from second command-line argument)
+        print("Missing '.html' file extension from second command-line argument")
         print('Exiting program ...')
         sys.exit(1)
     
-    if not in os.path.exists(csv_file):
+    if not os.path.exists(csv_file):
         print("{} does'nt exist".format(csv_file))
         print("exiting program...")
         sys.exit(1)
