@@ -9,8 +9,8 @@ logfile = r"C:\Users\user\OneDrive\IT-automation\Interact_with_Operating_System\
 pattern =r"(INFO|ERROR) ([\w' ]+|[\w\[\]#' ]+) (\(\w\)|\(\w+\.\w+\))$"
 
 with open(logfile,'r') as f:
-    print(f)
     for line in f:
+        print(line)
         result = re.search(pattern,line)
         if result is None:
             continue

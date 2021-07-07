@@ -13,3 +13,8 @@ and generate reports based on the information extracted from the log files.
 * Write to file in CSV format
 * Move files to the appropriate directory for use with the CSV->HTMl converter
 
+
+### Result
+
+<img src="./Error_html.jpg" width="350px" />
+<img src="./User_statistics_html.jpg" width="350px" />
