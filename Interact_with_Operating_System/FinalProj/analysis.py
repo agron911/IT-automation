@@ -5,13 +5,13 @@ import operator
 
 error_messages = {}
 per_user = {}
-logfile = r"C:\Users\user\OneDrive\IT-automation\Interact_with_Operating_System\FinalProj\syslog.log"
-pattern =r"(INFO|ERROR) ([\w' ]+|[\w\[\]#' ]+) (\(\w\)|\(\w+\.\w+\))$"
+logfile = r"/home/agron/IT-automation/Interact_with_Operating_System/FinalProj/syslog.log"
+pattern = r"(INFO|ERROR) ([\w' ]+|[\w\[\]#' ]+) (\(\w+\)|\(\w+\.\w+\))$"
 
 with open(logfile,'r') as f:
-    print(f)
     for line in f:
         result = re.search(pattern,line)
+        print(result)
         if result is None:
             continue
         if result.groups()[0] =="INFO":
@@ -42,7 +42,7 @@ with open("error_message.csv","w") as error_file:
 
 with open("user_statistics.csv",'w') as user_file:
     for line in sorted_users:
-        if isinstance(list[1],dict):
+        if isinstance(line[1],dict):
             user_file.write("{} {} {}\n".format(line[0],line[1].get("INFO"),line[1].get("ERROR")))
         else:
             user_file.write("{} {} {}\n".format(line[0],line[1],line[2]))
