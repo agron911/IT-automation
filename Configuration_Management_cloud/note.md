@@ -32,4 +32,20 @@ class sudo {
 ```
 這個package sudo 應該要在每一台電腦上出現一旦這個規則被採用，當這個規則被採用會自動下載package。
 
-### Puppet resources
+### Puppet facts
+Variables that represent the characteristics of the system
+當puppet agent開始執行，會呼叫一個名為factor的程式，factor會分析目前的系統，並且儲存所有從facts中取得的資訊。完成之後，傳送這些facts的值到puppet server，計算出那些規則需要被執行
+
+```
+if $facts['is_virtual']{
+    package { 'smartmontools' :
+        ensure => purged,
+    }
+}else{
+    package {' smartmontools' :
+        ensure => install    
+    }
+}
+```
+
+Puppet使用的是
