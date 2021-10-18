@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### 安裝puppet
 
 ```
@@ -40,3 +41,6 @@ package { ' htop':
 ```
 sudo apt install puppet-module-puppetlabs-apache
 ```
+=======
+## test
+>>>>>>> a965ff4ba81a20f6f5cacab098e8d559186b87ec
