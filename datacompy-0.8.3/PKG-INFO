@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: datacompy
+Version: 0.8.3
+Summary: Dataframe comparison in Python
+Home-page: https://github.com/capitalone/datacompy
+Author: Ian Robertson, Dan Coates, Faisal Dosani
+Author-email: faisal.dosani@capitalone.com
+Maintainer: Faisal Dosani
+Maintainer-email: faisal.dosani@capitalone.com
+License: Apache Software License
+Project-URL: Documentation, https://capitalone.github.io/datacompy/
+Project-URL: Bug Tracker, https://github.com/capitalone/datacompy/issues
+Project-URL: Source Code, https://github.com/capitalone/datacompy
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Provides-Extra: spark
+Provides-Extra: docs
+Provides-Extra: tests
+Provides-Extra: qa
+Provides-Extra: build
+Provides-Extra: edgetest
+Provides-Extra: dev
+License-File: LICENSE
